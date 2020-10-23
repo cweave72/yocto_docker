@@ -18,7 +18,7 @@ RUN apt-get update && \
 
 # Extras
 RUN apt-get update && \
-    apt-get install -y ranger
+    apt-get install -y ranger tree
 
 ADD https://commondatastorage.googleapis.com/git-repo-downloads/repo /usr/local/bin/
 RUN chmod 755 /usr/local/bin/*

@@ -27,9 +27,7 @@ docker run -ti --rm \
            -e WORKING_DIR="$WORKING_DIR" \
            -v /tmp/.X11-unix:/tmp/.X11-unix \
            -v $HOME/.Xauthority:/home/user/.Xauthority \
-           -v $HOME:/home/user \
-           -v /opt/docker_volumes:/opt \
-           -v /tools:/tools \
+	   -v $HOME:/home/user \
            -v /mnt/probox/shares/netshare:/mnt/probox/shares/netshare \
            ubuntu-bionic \
            bash
